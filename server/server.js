@@ -12,4 +12,9 @@ const items = new Map([
   [2, { priceIncents: 20000, name: "Test Two" }],
 ]);
 
+// create route
+app.post("/create-checkout-session", (req, res) => {
+  res.json({ url: "https://google.com" });
+});
+
 app.listen(3000);
