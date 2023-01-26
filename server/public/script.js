@@ -18,7 +18,7 @@ button.addEventListener("click", () => {
     })
     .then(({ url }) => {
       console.log(url);
-      window.location = url;
+      window.open(url, "_blank");
     })
     .catch((e) => {
       console.error(e.error);
